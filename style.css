@@ -1,0 +1,469 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* html {
+    font-family: ;
+} */
+
+#header{
+    height: 24px;
+    background-color: #000;
+    position: relative;
+}
+
+#header .header-login a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+#header .header-login{
+    width: 1100px;
+    height: 24px;
+    background-color: #000;
+    position: absolute;
+    left: 250px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: right;
+}
+
+#header .flag-icon{
+    position: absolute;
+    right: 220px;
+    bottom: 0;
+}
+
+#header .flag-icon img{
+    padding-top: 3.2px;
+    height: 21px;
+}
+
+#header .header-login a{
+    color: #fff;
+    font-weight: 50px;
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 5px;
+    text-decoration: none;
+}
+
+#logo-nav{
+    height: 72px;
+    box-shadow: 0 1px 3px #ddd;
+    position: relative;
+}
+
+#logo img{
+    padding-left: 150px;
+    width: px;
+    height: 70px;
+}
+
+#nav {
+    width: 80%;
+    height: 72px;
+    float: right;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#subnav2, .subofsub2 {
+    list-style-type: none;
+}
+
+#subnav2 >li {
+    display: inline-block;
+}
+
+#subnav2 li {
+    position: relative;
+}
+
+#subnav2 > li > a{
+    color: #333;
+    line-height: 72px;
+    text-decoration: none;
+    padding: 0px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#subnav2 > li:hover > a,
+#subnav2 .subofsub2 li:hover a{
+    color: #337ab7;
+    background-color: #fcfcfc;
+}
+
+#subnav2 > li:hover .subofsub2{
+    display: block;
+}
+
+#subnav2 .subofsub2 {
+    display: none;  
+    width: 190px;
+    height: 420px;
+    position: absolute; 
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#subnav2 .subofsub2 a{
+    border: 0px 5px 5px 5px black;
+    padding-left: 20px;
+    color: #333;
+    text-decoration: none; 
+    line-height: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: block;
+}
+
+#slider{
+    margin: 0;
+    padding: 0;
+    background: #34495e;
+    position: relative;
+}
+
+.slidershow{
+    width: 100%;
+    height: 575px;
+    overflow: hidden;
+}
+
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.navigation{
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.bar{
+    width: 15px;
+    height: 15px;
+    border: 2px solid blue;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+    opacity: 0.8;
+    border-radius: 60%;
+}
+
+.bar:hover{
+    background:black;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slide{
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#r2:checked ~ .s1{
+    margin-left: -20%;
+}
+
+#r3:checked ~ .s1{
+    margin-left: -40%;
+}
+
+#form{
+    margin-top: 50px;
+    width: 100%;
+    height: 175px;
+    color: #333333;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    font-size: 14px;
+}
+
+#text-center{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    left: 50%;
+    transform: translate(-33%, -50%);
+    text-align: center;
+    width: 1120px;
+    height: 110px;
+    line-height: 20px;
+    text-size-adjust: 100%;
+}
+
+.nav-tabs{
+    position: relative;
+    height: 110px;
+    text-align: center;
+    list-style: none;
+}
+
+.nav-tabs > li{
+    border-width: 0px 0px 4px 0px;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 2px 0;
+    border-bottom: 1px solid #ddd;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    letter-spacing: -1px;
+}
+
+.nav-tabs > li.active{
+    /* margin-left: 190px; */
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(to right, #39adf0 0%, #075fa3 100%);
+    border-image-slice: 1;
+}
+
+.nav-tabs > li.active-dangchieu{
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(to right, #39adf0 0%, #075fa3 100%);
+    border-image-slice: 1;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.nav-tabs > li.active-dacbiet{
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(to right, #39adf0 0%, #075fa3 100%);
+    border-image-slice: 1;
+}
+
+.nav-tabs .nav-mid{
+    padding-left: 25px;
+    padding-right: 15px;
+}
+
+.nav-tabs > li > a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-tabs > li > a > h1{
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    margin: 20px 0 10px;
+    font-weight: 575;
+}
+
+
+.up{
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+}
+.up ul{
+    list-style: none;
+    margin: 0 auto;
+}
+.up ul li{
+    display: inline-block;
+    font-size:50px;
+    font-weight: bold;
+    color: black;
+}
+.logo img{
+    padding-left: 150px;
+    height: 50px;
+    vertical-align: middle;
+    border: 0;
+}  
+.logo1 a {
+    font-size: 20px;
+    padding-bottom: 7px;
+    margin: 0px 60px -1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 4px solid transparent;
+    border-image: linear-gradient(to right, #39adf0 0%, #075fa3 100%);
+    border-image-slice: 1;
+    float: left;
+    margin-left: 61px;
+    text-decoration: none;
+    color: black;
+    font-family: Oswald !important, sans-serif;
+    line-height: -0.5em;
+}
+.logo2 a{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 4px solid transparent;
+    border-image: linear-gradient(to right, #39adf0 0%, #075fa3 100%);
+    border-image-slice: 1;
+    float: left;
+    text-decoration: none;
+    color: black;
+    font-family: Oswald !important, sans-serif;
+    line-height: -0.5em;
+    margin-left: 120px;
+    box-sizing: border-box;
+}
+
+.down{
+    height: 50px;
+    width: 100%;
+    margin-top:20px;
+    margin-left:120px;
+
+}
+.down ul li{
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    list-style: none;
+}
+.down ul li a{
+
+    text-decoration: none;
+    color: black;
+    line-height: 2;  
+} 
+
+.down > li:hover > a,
+.down  li:hover a{
+    color: #337ab7;
+    background-color: #fcfcfc;
+    box-shadow: 0 1.5px ;
+}
+
+.group ul li{
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    list-style: none;
+}
+
+.group ul li a{
+    text-decoration: none;
+    color: black;
+    line-height: 2;
+}
+
+.group{
+    margin-left: 390px;
+    height: 50px;
+    width: 80%;
+    margin-top: -64px;
+}
+
+.group > li:hover > a,
+.group  li:hover a{
+    color: #337ab7;
+    background-color: #805e5e;
+    box-shadow: 0 1.5px ;
+}
+
+.connect-logo{
+    padding-left: 860px;
+    margin-top: -60px;
+    position: relative;
+    width: 100px;
+    height: 300px;
+}
+
+.connect-logo #social-logo{
+    position: absolute;
+    display: inline;
+    list-style-type: none;
+}
+
+.fa {  
+    border-radius: 7px;
+    padding: 4px;  
+    text-align: center;  
+    margin: 5px 5px;  
+    font-size: 30px;  
+    width: 40px;  
+    list-style-type: none;
+}  
+
+.fa-facebook {  
+    background: #3B5998;  
+    color: white;  
+}  
+
+.fa-instagram {  
+    background: #125688;  
+    color: white;  
+    position: absolute;
+    left: 70px;
+    top: 0px;
+}  
+
+.fa-youtube {  
+    background: #bb0000;  
+    color: white;  
+    position: absolute;
+    left: 140px;
+    top: 0px;
+}
+
+.contact {
+    height: 50px;
+    width: 100%;
+    margin-top: -295px;
+    margin-left: 76%;
+}
+
+.contact ul li{
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    list-style: none;
+}
+
+.contact ul li a{
+    text-decoration: none;
+    color: black;
+    line-height: 2;
+}
+
+.down > li:hover > a,
+.down  li:hover a{
+    color: #337ab7;
+    background-color: #fcfcfc;
+    box-shadow: 0 1.5px ;
+}
+
